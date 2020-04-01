@@ -15,7 +15,6 @@ class Doctor
   end
   
   def appointments
-    #binding.pry
     Appointment.all.select do |appointment|
       appointment.doctor == self
     end
@@ -26,7 +25,7 @@ class Doctor
   end
   
   def patients
-    appointments.collect do |appointment|
+    appointments.map do |appointment|
       appointment.date
     end
   end
