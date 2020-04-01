@@ -1,3 +1,5 @@
+require 'pry'
+
 class Artist 
   attr_accessor :name
   
@@ -23,6 +25,7 @@ class Artist
   end
   
   def genres
+    binding.pry
     songs.map do |song|
       song.genre
     end
