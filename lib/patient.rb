@@ -25,9 +25,9 @@ class Patient
   end
   
   def doctors
-    #binding.pry
+    binding.pry
     appointments.map do |appointment|
-      appointment.date.doctor
+      appointment.doctor
     end
   end
 end
