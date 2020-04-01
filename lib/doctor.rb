@@ -18,4 +18,6 @@ class Doctor
     end
   end
   
+  def new_appointments
+  
 end
