@@ -26,7 +26,7 @@ class Patient
   end
   
   def doctors
-    appointments.collect do |appointment|
+    appointments.map do |appointment|
       appointment.doctor
     end
   end
